@@ -28,24 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('Your cart is empty.');
             return;
         }
-        // Here you can add payment processing logic
-        // For example, redirect to a payment gateway or API
         generateReceipt();
     }
 
     function generateReceipt() {
-        // Mock receipt generation
         const receipt = cart.map(item => `<p>${item.name}: $${item.price.toFixed(2)}</p>`).join('');
-        const total = cart.reduce((sum, item) => sum + item.price, 0).toFixed(2);
-        const receiptHtml = `
-            <h2>Receipt</h2>
-            ${receipt}
-            <p>Total: $${total}</p>
-        `;
-        const newWindow = window.open();
-        newWindow.document.write(receiptHtml);
-        newWindow.document.close();
-    }
-
-    displayCartItems();
-});
+        const total = cart.reduce((sum, item) =>
