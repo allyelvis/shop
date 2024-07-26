@@ -135,3 +135,50 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+/* Existing styles... */
+
+.admin {
+    padding: 20px;
+}
+
+.admin form {
+    margin-bottom: 20px;
+}
+
+.admin form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.admin form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.admin form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.admin form button:hover {
+    background-color: #0056b3;
+}
+
+.cart {
+    padding: 20px;
+}
+
+.cart button {
+    margin: 10px;
+    background-color: #dc3545;
+}
+
+.cart button:hover {
+    background-color
