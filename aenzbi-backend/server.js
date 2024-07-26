@@ -19,3 +19,6 @@ app.use('/api/orders', orderRoutes);
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+const connectDB = require('./data/database');
+
+connectDB();
