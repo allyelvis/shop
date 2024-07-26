@@ -72,4 +72,6 @@ function checkout() {
         alert('Your cart is empty.');
         return;
     }
-    // Proceed to checkout logic, e.g
+    // Proceed to checkout logic, e.g., redirect to checkout page or API call
+    alert('Proceeding to checkout...');
+}
