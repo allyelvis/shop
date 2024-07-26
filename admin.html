@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aenzbi Ecommerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin">
+            <h2>Manage Products</h2>
+            <form id="add-product-form">
+                <h3>Add New Product</h3>
+                <label for="product-name">Name:</label>
+                <input type="text" id="product-name" required>
+                <label for="product-price">Price:</label>
+                <input type="number" id="product-price" step="0.01" required>
+                <label for="product-image">Image URL:</label>
+                <input type="url" id="product-image" required>
+                <button type="submit">Add Product</button>
+            </form>
+            <h3>Product List</h3>
+            <div class="product-list" id="admin-product-list">
+                <!-- Products will be listed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aenzbi Ecommerce. All rights reserved.</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
