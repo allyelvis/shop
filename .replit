@@ -1,5 +1,5 @@
 modules = ["nodejs-20", "web", "bash"]
-run = "node server.js"
+run = "npm install"
 
 [nix]
 channel = "stable-24_05"
