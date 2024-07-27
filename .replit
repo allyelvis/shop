@@ -1,8 +1,16 @@
-modules = ["nodejs-20", "web", "bash"]
-run = "npm install"
+# This file tells Replit how to run and build your project
 
-[nix]
-channel = "stable-24_05"
+# Specify the run command
+run = "npm run dev"
 
-[deployment]
-run = ["sh", "-c", "node server.js"]
+# Specify the build command
+build = "npm run build"
+
+# Specify the entry point for your web server
+web = "npm start"
+
+# Optionally, specify the environment variables
+env = {
+  "PORT": "3000",
+  "MONGODB_URI": "your_mongodb_uri_here"
+}
