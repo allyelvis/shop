@@ -23,8 +23,8 @@ To run this eCommerce site locally, follow these instructions:
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
+    git clone https://github.com/allyelvis/shop.git
+    cd shop
     ```
 
 2. **Setup**
